@@ -24,7 +24,7 @@
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" action="{% url 'blog:search' %}">
                 <input type="search" name="q" class="form-control " placeholder="搜索" aria-label="Search">
             </form>
-            #登录判断，当登录时显示用户头像和点击后可退出登录的下拉框。当未登录时显示登录和注册的按钮
+
             {% if user.is_authenticated %}
                 <div class="dropdown text-end">
                     <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
